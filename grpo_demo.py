@@ -152,7 +152,7 @@ if __name__=="__main__":
         weight_decay = 0.1,
         warmup_ratio = 0.1,
         lr_scheduler_type='cosine',
-        logging_steps=10,
+        logging_steps=1,
         bf16=True,
         per_device_train_batch_size=1,
         gradient_accumulation_steps=4,
