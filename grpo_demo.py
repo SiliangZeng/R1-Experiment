@@ -146,7 +146,7 @@ if __name__=="__main__":
     training_args = GRPOConfig(
         output_dir=output_dir,
         run_name=run_name,
-        learning_rate=5e-6,
+        learning_rate=1e-6,
         adam_beta1 = 0.9,
         adam_beta2 = 0.99,
         weight_decay = 0.1,
