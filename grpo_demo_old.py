@@ -1,8 +1,7 @@
 # train_grpo.py
 import re
-import torch
 from datasets import load_dataset, Dataset
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer
 from peft import LoraConfig
 from trl import GRPOConfig, GRPOTrainer
 
@@ -11,10 +10,14 @@ from accelerate import Accelerator
 
 accelerator = Accelerator()
 
+if accelerator.is_main_process:
+    wandb.init(project="R1-Experiment", entity="zeng0176", name = "Llama-1B-base-GRPO-gsm8k")  # 仅主进程初始化 W&B
+
 # Load and prep dataset
 
 SYSTEM_PROMPT = """
 Respond in the following format:
+
 <reasoning>
 ...
 </reasoning>
@@ -42,17 +45,16 @@ def extract_hash_answer(text: str) -> str | None:
         return None
     return text.split("####")[1].strip()
 
-# uncomment middle messages for 1-shot prompting
 def get_gsm8k_questions(split = "train") -> Dataset:
     data = load_dataset('openai/gsm8k', 'main')[split] # type: ignore
     data = data.map(lambda x: { # type: ignore
         'prompt': [
             {'role': 'system', 'content': SYSTEM_PROMPT},
-            #{'role': 'user', 'content': 'What is the largest single-digit prime number?'},
-            #{'role': 'assistant', 'content': XML_COT_FORMAT.format(
-            #    reasoning="9 is divisble by 3 and 8 is divisible by 2, but 7 is prime.",
-            #    answer="7"
-            #)},
+            {'role': 'user', 'content': 'What is the largest single-digit prime number?'},
+            {'role': 'assistant', 'content': XML_COT_FORMAT.format(
+                reasoning="9 is divisble by 3 and 8 is divisible by 2, but 7 is prime.",
+                answer="7"
+            )},
             {'role': 'user', 'content': x['question']}
         ],
         'answer': extract_hash_answer(x['answer'])
@@ -87,7 +89,7 @@ def soft_format_reward_func(completions, **kwargs) -> list[float]:
     responses = [completion[0]["content"] for completion in completions]
     matches = [re.match(pattern, r) for r in responses] 
     return [0.5 if match else 0.0 for match in matches]
-
+    
 def count_xml(text) -> float:
     count = 0.0
     if text.count("<reasoning>\n") == 1:
@@ -106,38 +108,22 @@ def xmlcount_reward_func(completions, **kwargs) -> list[float]:
     contents = [completion[0]["content"] for completion in completions]
     return [count_xml(c) for c in contents]
 
-#model_name = "meta-llama/Llama-3.2-1B-Instruct"
-model_name = "Qwen/Qwen2.5-1.5B-Instruct"
-
-if "Llama" in model_name:
-    output_dir = "outputs/Llama-1B-GRPO"
-    run_name = "Llama-1B-GRPO-gsm8k"
-else:
-    output_dir="outputs/Qwen-1.5B-GRPO"
-    run_name="Qwen-1.5B-GRPO-gsm8k"
-    
-if accelerator.is_main_process:
-    wandb.init(project="R1-Experiment", entity="zeng0176", name = run_name)  # 仅主进程初始化 W&B
-    
 training_args = GRPOConfig(
-    output_dir=output_dir,
-    run_name=run_name,
-    learning_rate=5e-6,
+    output_dir="outputs/Llama-1B-base-GRPO",
+    run_name="Llama-1B-base-GRPO-gsm8k",
+    learning_rate=1e-6,
     adam_beta1 = 0.9,
-    adam_beta2 = 0.99,
+    adam_beta2 = 0.95,
     weight_decay = 0.1,
     warmup_ratio = 0.1,
     lr_scheduler_type='cosine',
     logging_steps=1,
-    bf16=True,
     per_device_train_batch_size=1,
-    gradient_accumulation_steps=4,
+    gradient_accumulation_steps=6,
     num_generations=12,
-    max_prompt_length=256,
-    max_completion_length=786,
-    num_train_epochs=1,
-    save_steps=100,
-    max_grad_norm=0.1,
+    max_completion_length=512,
+    bf16=True,
+    max_grad_norm=0.01,
     report_to="wandb",
     log_on_each_node=False,
 )
@@ -148,19 +134,11 @@ peft_config = LoraConfig(
     task_type="CAUSAL_LM",
     lora_dropout=0.05,
 )
-model = AutoModelForCausalLM.from_pretrained(
-    model_name,
-    torch_dtype=torch.bfloat16,
-    attn_implementation="flash_attention_2",
-    device_map=None
-).to("cuda")
-        
+model_name = "meta-llama/Llama-3.2-1B-Instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 tokenizer.pad_token = tokenizer.eos_token
-
-# use peft at your own risk; not working for me with multi-GPU training
 trainer = GRPOTrainer(
-    model=model,
+    model=model_name,
     processing_class=tokenizer,
     reward_funcs=[
         xmlcount_reward_func,
