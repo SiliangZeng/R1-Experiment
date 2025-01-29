@@ -1,0 +1,426 @@
+[2025-01-28 17:18:12,271] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-01-28 17:18:13,344] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 8
+[2025-01-28 17:18:17,827] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 8
+[2025-01-28 17:18:19,206] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 8
+-------------------- Question:
+Lynne bought 7 books about cats and 2 books about the solar system. She also bought 3 magazines. Each book cost 7$ and each magazine cost $4. How much did Lynne spend in all?
+Answer:
+75
+Response:
+To find the total amount Lynne spent, first calculate the cost of the books and magazines separately.
+
+The cost of the 7 books about cats:
+7 books * $7 per book = $49
+
+The cost of the 2 books about the solar system:
+2 books * $7 per book = $14
+
+The cost of the 3 magazines:
+3 magazines * $4 per magazine = $12
+
+Now, add the costs of the books, magazines, and then Lynne's total amount spent:
+$49 (books) + $14 (solar system books) = $63
+$63 + $12 (magazines) = $75
+
+Lynne spent a total of $75.
+Extracted:
+To find the total amount Lynne spent, first calculate the cost of the books and magazines separately.
+
+The cost of the 7 books about cats:
+7 books * $7 per book = $49
+
+The cost of the 2 books about the solar system:
+2 books * $7 per book = $14
+
+The cost of the 3 magazines:
+3 magazines * $4 per magazine = $12
+
+Now, add the costs of the books, magazines, and then Lynne's total amount spent:
+$49 (books) + $14 (solar system books) = $63
+$63 + $12 (magazines) = $75
+
+Lynne spent a total of $75.
+-------------------- Question:
+The Early Bird Dinner offered dinner meals at half off the menu price if you eat between 2-4 pm.  Curtis ordered the Salisbury Steak that costs $16.00 and Rob ordered the Chicken Fried Steak at $18.00.  If they ate at 3 pm, what was the cost of their total bill?
+Answer:
+17
+Response:
+<reasoning>
+Since Curtis and Rob ate between 2-4 pm, they were eligible for the Early Bird Dinner special.
+Curtis' meal would be half off if you eat between 2-3 pm.  So half off would be  $16 * 0.5
+$8
+Curtis' meal: $8
+Rob's meal: $18 * 0.5
+$9
+Cost of their bill: $8 + $9 = $17
+Extracted:
+<reasoning>
+Since Curtis and Rob ate between 2-4 pm, they were eligible for the Early Bird Dinner special.
+Curtis' meal would be half off if you eat between 2-3 pm.  So half off would be  $16 * 0.5
+$8
+Curtis' meal: $8
+Rob's meal: $18 * 0.5
+$9
+Cost of their bill: $8 + $9 = $17
+-------------------- Question:
+Bobby buys two packets of candy. He eats two candies every day from Monday through Friday and takes one each during the remaining days of the week. If it takes him 3 such weeks to finish the 2 packets, how many candies are in a packet?
+Answer:
+18
+Response:
+<reasoning>
+Day 1 - 2 candies, Day 2 - 2 candies, 2+1=3 candies, Day 3 - 2 candies, 2+1=3, Day 4 - 2 candies, 2+1=3, Day 5 - 2 candies, 2+1=3, Day 6 - 2 candies, 2+1=3.
+So Bobby eats 2*5 + 3 = 13 candies in one week.
+
+2 weeks = 13*2 = 26 candies.
+
+Therefore, each packet contains 26 candies.
+</reasoning>
+<answer>
+26
+</answer>
+Extracted:
+26
+-------------------- Question:
+The Lion King cost 10 million to make and earned 200 million at the box office. If it earned a profit that was half of what Star Wars made and Star Wars cost 25 million to make, how many millions did Star Wars earn?
+Answer:
+405
+Response:
+To find out how many millions Star Wars earned, we need to first find out the profit made by Star Wars. Since the profit of Lion King is half of the profit of Star Wars, the profit of Star Wars is 2 * 200 million = 400 million.
+
+To find out how many millions Star Wars made, we add the profit to the cost of making:
+
+400 million (profit) + 25 million (cost) = 425 million
+
+So, Star Wars earned 425 million.
+Extracted:
+To find out how many millions Star Wars earned, we need to first find out the profit made by Star Wars. Since the profit of Lion King is half of the profit of Star Wars, the profit of Star Wars is 2 * 200 million = 400 million.
+
+To find out how many millions Star Wars made, we add the profit to the cost of making:
+
+400 million (profit) + 25 million (cost) = 425 million
+
+So, Star Wars earned 425 million.
+-------------------- Question:
+Camp Cedar has 40 boys, it has 3 times as many girls.  It needs 1 counselor for every 8 children.  How many counselors does Camp Cedar need?
+Answer:
+20
+Response:
+<reasoning>
+To find the number of girls, multiply the number of boys by 3.
+Number of girls = 40 * 3 = 120.
+Since the total number of children is 40 + 120 = 160, and there needs to be a counselor for every 8 children,
+Number of counselors = 160 / 8 = 20.
+</reasoning>
+<answer>
+20
+Extracted:
+20
+-------------------- Question:
+Carla's teacher tells her that she needs to collect 30 leaves and 20 bugs for a project that's due in 10 days. How many items does Carla need to collect each day if she always wants to collect the same daily amount?
+Answer:
+5
+Response:
+<reasoning>
+To find the same daily amount, we need to divide the total number of items Carla needs to collect (30 leaves + 20 bugs = 50 items) by the number of days (10 days).
+
+50 items / 10 days = 5 items per day.
+
+</reasoning>
+
+<answer>
+5
+</answer>
+Extracted:
+5
+-------------------- Question:
+In the class of 24 students, half are doing silent reading, and a third are playing board games. The rest are catching up on homework. How many students are catching up on homework?
+Answer:
+4
+Response:
+To find the number of students catching up on homework, we need to calculate the number of students in each category.
+
+Since half of the students are doing silent reading, that would be 24 / 2 = 12 students.
+A third of the students are playing board games, which would be 24 / 3 = 8 students.
+So, the number of students catching up on homework is 24 (total students) - 12 (silent reading) - 8 (playing board games) = 4 students.
+Extracted:
+To find the number of students catching up on homework, we need to calculate the number of students in each category.
+
+Since half of the students are doing silent reading, that would be 24 / 2 = 12 students.
+A third of the students are playing board games, which would be 24 / 3 = 8 students.
+So, the number of students catching up on homework is 24 (total students) - 12 (silent reading) - 8 (playing board games) = 4 students.
+-------------------- Question:
+Amaya is watching a movie that she finds kind of boring, so she keeps tuning out and having to rewind it to catch what she missed. She watches 35 minutes before she realizes she needs to rewind the movie to catch something she missed, a process that adds 5 minutes to her total viewing time. She watches the movie for another 45 minutes but has to rewind it again, adding 15 minutes to her total time. Finally, she watches the last 20 minutes uninterrupted. If she added up the duration of the film plus all the times she had to rewind and re-watch parts, how many minutes did it take her to watch the movie?
+Answer:
+120
+Response:
+<reasoning>
+To find the total time Amaya spent watching the movie, we'll first calculate the total time she rewound for.
+- She rewound the movie 3 times, each time adding 5 minutes.
+- So, the total time she rewound for is 3 * 5 = 15 minutes.
+- She rewound the movie 2 times, each time adding 15 minutes.
+- So, the total time she rewound for is 2 * 15 = 30 minutes.
+- Now, we add the time spent watching the movie and rewinding.
+- Time watching movie = 35 minutes
+- Rewind time = 15 + 30 = 45 minutes
+- Total time spent watching = 35 + 45 = 80 minutes
+
+</reasoning>
+<answer>
+80
+Extracted:
+80
+-------------------- Question:
+Marta sells tomatoes in a grocery store. On Friday, a shipment of 1000 kg of tomatoes arrived at the store. On Saturday, Marta sold a total of 300 kg of tomatoes to customers. On Sunday, the store was closed, causing 200 kg of tomatoes to rot and to be thrown away. On Monday morning another shipment arrived, twice the size of the first one. How many kilograms of tomatoes did Marta have ready for sale on Tuesday?
+Answer:
+2500
+Response:
+To find out how many kilograms of tomatoes Marta had ready for sale on Tuesday, we need to calculate the total amount of tomatoes she had at the end of Sunday.
+
+On Friday, she had 1000 kg.
+On Saturday, she sold 300 kg, leaving her with 1000 - 300 = 700 kg.
+On Sunday, she threw away 200 kg, leaving her with 700 - 200 = 500 kg.
+
+The new shipment was twice the size of the first shipment, which was 1000 kg. So, the new shipment was 1000 * 2 = 2000 kg.
+
+Now, let's add the amount of tomatoes she had at the end of Sunday (500 kg) to the new shipment:
+
+500 kg + 2000 kg = 2500 kg
+
+So, Marta had 2500 kg of tomatoes ready for sale on Tuesday.
+Extracted:
+To find out how many kilograms of tomatoes Marta had ready for sale on Tuesday, we need to calculate the total amount of tomatoes she had at the end of Sunday.
+
+On Friday, she had 1000 kg.
+On Saturday, she sold 300 kg, leaving her with 1000 - 300 = 700 kg.
+On Sunday, she threw away 200 kg, leaving her with 700 - 200 = 500 kg.
+
+The new shipment was twice the size of the first shipment, which was 1000 kg. So, the new shipment was 1000 * 2 = 2000 kg.
+
+Now, let's add the amount of tomatoes she had at the end of Sunday (500 kg) to the new shipment:
+
+500 kg + 2000 kg = 2500 kg
+
+So, Marta had 2500 kg of tomatoes ready for sale on Tuesday.
+-------------------- Question:
+Tanika is selling boxes of crackers for her scout troop's fund-raiser. On Saturday, she sold 60 boxes. On Sunday, she sold 50% more than on Saturday. How many boxes did she sell, in total, over the two days?
+Answer:
+150
+Response:
+<reasoning>
+Let's calculate the number of boxes Tanika sold on Sunday.
+On Saturday, she sold 60 boxes, and on Sunday she sold 50% more than on Saturday, which is 60 + (0.5 * 60) = 60 + 30 = 90.
+So, she sold 60 + 90 = 150 boxes over the two days.
+</reasoning>
+
+<answer>
+Tanika sold 150 boxes over the two days.
+Extracted:
+Tanika sold 150 boxes over the two days.
+-------------------- Question:
+Hannah's AdBlock blocks all but 20% of ads, and 20% of the ads it doesn't block are actually interesting. What percentage of ads aren't interested and don't get blocked?
+Answer:
+16
+Response:
+Let's break this down step by step:
+
+1. 20% of ads are blocked by Hannah's AdBlock.
+2. 20% of ads that aren't blocked are actually interesting. This means 80% of ads are either blocked or interesting (but not both).
+
+If we consider the 20% of ads not blocked to be the portion that aren't interesting either, we can infer that:
+
+0.8 x 0.2 = 0.16 or 16% of ads aren't interesting.
+
+Since 80% of ads aren't blocked, the 16% that aren't interesting make up 100% - 80% = 20% of all ads.
+Extracted:
+Let's break this down step by step:
+
+1. 20% of ads are blocked by Hannah's AdBlock.
+2. 20% of ads that aren't blocked are actually interesting. This means 80% of ads are either blocked or interesting (but not both).
+
+If we consider the 20% of ads not blocked to be the portion that aren't interesting either, we can infer that:
+
+0.8 x 0.2 = 0.16 or 16% of ads aren't interesting.
+
+Since 80% of ads aren't blocked, the 16% that aren't interesting make up 100% - 80% = 20% of all ads.
+-------------------- Question:
+Zach is saving his money to buy a brand new bike that costs $100.  His weekly allowance is $5.  His parent will pay him an extra $10 to mow the lawn.  His neighbor will pay him $7 per hour to babysit their son.  He has already saved up $65.  He'll receive his allowance on Friday and he's planning on babysitting for 2 hours this Saturday after he mows the lawn.  How much more money does Zach need to earn before he can buy the bike?
+Answer:
+6
+Response:
+<reasoning>
+   The bike costs $100 and Zach is saving up $65 so he needs $100 - $65 = $35.
+   In one week, Zach's weekly allowance will be $5 + $10 = $15.
+   In two weeks, babysitting 2 hours a Saturday will make $7 x 2 = $14.
+   The total amount Zach needs to save is $35 + $15 + $14 = $64.
+   The amount Zach already has is $65, so the amount he needs is $64 - $65 = -$1.
+</reasoning>
+
+<answer>
+Zach needs to earn $1 more to buy the bike.
+</answer>
+Extracted:
+Zach needs to earn $1 more to buy the bike.
+-------------------- Question:
+8 years ago James was twice Janet's age.  In 15 years James will turn 37.  Susan was born when Janet turned 3.  How old will Susan turn in 5 years?
+Answer:
+17
+Response:
+Let's break down the information given:
+
+1. 8 years ago James was twice Janet's age.
+   - James' age 8 years ago: J - 8
+   - Janet's age 8 years ago: J - 8 / 2
+   - This simplifies to: J - 8 = 2(J - 8) / 2
+   - Simplify this: J - 8 = J - 8
+   - This means that 8 years ago, James and Janet were the same age.
+
+2. In 15 years James will turn 37.
+   - The current age of James is 37 - 15 = 22.
+   - This means that 15 years ago James was 37 - 15 = 22 years old.
+   - Since James was 8 years old 8 years ago, we can now determine James' current age.
+
+3. Susan was born when Janet turned 3.
+   - Janet's current age is currently 3 + (current year – 3).
+   - This is: 3 + 2023 = 2026.
+   - Given this, Susan's age would be 2026 - (current year – 15).
+
+4. To find Susan's age 5 years from now, we add 5 to her current age.
+
+Let's calculate Susan's age 5 years from now:
+
+- Current age of Susan: 2026 – 15 = 2011 years old
+- Susan's age 5 years from now: 2011 + (current year – 5)
+- Susan's age 5 years from now: 2011 + 2026 – 5
+- This simplifies to: 2011 + 2021 = 4042 years old
+
+So, in 5 years, Susan will turn 4042 years old.
+Extracted:
+Let's break down the information given:
+
+1. 8 years ago James was twice Janet's age.
+   - James' age 8 years ago: J - 8
+   - Janet's age 8 years ago: J - 8 / 2
+   - This simplifies to: J - 8 = 2(J - 8) / 2
+   - Simplify this: J - 8 = J - 8
+   - This means that 8 years ago, James and Janet were the same age.
+
+2. In 15 years James will turn 37.
+   - The current age of James is 37 - 15 = 22.
+   - This means that 15 years ago James was 37 - 15 = 22 years old.
+   - Since James was 8 years old 8 years ago, we can now determine James' current age.
+
+3. Susan was born when Janet turned 3.
+   - Janet's current age is currently 3 + (current year – 3).
+   - This is: 3 + 2023 = 2026.
+   - Given this, Susan's age would be 2026 - (current year – 15).
+
+4. To find Susan's age 5 years from now, we add 5 to her current age.
+
+Let's calculate Susan's age 5 years from now:
+
+- Current age of Susan: 2026 – 15 = 2011 years old
+- Susan's age 5 years from now: 2011 + (current year – 5)
+- Susan's age 5 years from now: 2011 + 2026 – 5
+- This simplifies to: 2011 + 2021 = 4042 years old
+
+So, in 5 years, Susan will turn 4042 years old.
+-------------------- Question:
+John watches a TV show and they announce they are going to do 1 more season.  Each season is 22 episodes except for the last season which is 4 episodes longer.  There were 9 seasons before the announcement.  If each episode is .5 hours how long will it take to watch them all after the last season finishes?
+Answer:
+112
+Response:
+<reasoning>
+To find the total number of episodes, we need to calculate the number of episodes for each season and then add them together.
+
+Before the announcement, there were 9 seasons, each having 22 episodes, so total episodes = 9 * 22 = 198. Adding the last episode, the total becomes 198 + 4 = 202 episodes.
+
+To find the total time, multiply the total episodes by the time per episode (0.5 hours): 202 episodes * 0.5 hours/episode = 101 hours.
+
+</reasoning>
+<answer>
+101 hours
+</answer>
+Extracted:
+101 hours
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/home/ubuntu/R1_Project/grpo_demo.py", line 152, in <module>
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+[rank5]:     return inner_training_loop(
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+[rank5]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 3579, in training_step
+[rank5]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/trl/trainer/grpo_trainer.py", line 326, in compute_loss
+[rank5]:     prompt_completion_ids = unwrapped_model.generate(**prompt_inputs, generation_config=self.generation_config)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank5]:     return func(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 2215, in generate
+[rank5]:     result = self._sample(
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 3206, in _sample
+[rank5]:     outputs = self(**model_inputs, return_dict=True)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank5]:     return self._call_impl(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1603, in _call_impl
+[rank5]:     result = forward_call(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1190, in forward
+[rank5]:     outputs = self.model(
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank5]:     return self._call_impl(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank5]:     return forward_call(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 945, in forward
+[rank5]:     layer_outputs = decoder_layer(
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank5]:     return self._call_impl(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank5]:     return forward_call(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 676, in forward
+[rank5]:     hidden_states, self_attn_weights, present_key_value = self.self_attn(
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank5]:     return self._call_impl(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank5]:     return forward_call(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 564, in forward
+[rank5]:     key_states = key_states.view(bsz, q_len, self.num_key_value_heads, self.head_dim).transpose(1, 2)
+[rank5]: KeyboardInterrupt
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/home/ubuntu/R1_Project/grpo_demo.py", line 152, in <module>
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+[rank5]:     return inner_training_loop(
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+[rank5]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 3579, in training_step
+[rank5]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/trl/trainer/grpo_trainer.py", line 326, in compute_loss
+[rank5]:     prompt_completion_ids = unwrapped_model.generate(**prompt_inputs, generation_config=self.generation_config)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank5]:     return func(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 2215, in generate
+[rank5]:     result = self._sample(
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 3206, in _sample
+[rank5]:     outputs = self(**model_inputs, return_dict=True)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank5]:     return self._call_impl(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1603, in _call_impl
+[rank5]:     result = forward_call(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1190, in forward
+[rank5]:     outputs = self.model(
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank5]:     return self._call_impl(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank5]:     return forward_call(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 945, in forward
+[rank5]:     layer_outputs = decoder_layer(
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank5]:     return self._call_impl(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank5]:     return forward_call(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 676, in forward
+[rank5]:     hidden_states, self_attn_weights, present_key_value = self.self_attn(
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank5]:     return self._call_impl(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank5]:     return forward_call(*args, **kwargs)
+[rank5]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 564, in forward
+[rank5]:     key_states = key_states.view(bsz, q_len, self.num_key_value_heads, self.head_dim).transpose(1, 2)
+[rank5]: KeyboardInterrupt

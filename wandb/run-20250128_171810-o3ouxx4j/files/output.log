@@ -1,0 +1,517 @@
+[2025-01-28 17:18:11,557] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-01-28 17:18:12,537] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 8
+[2025-01-28 17:18:17,865] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 8
+[2025-01-28 17:18:19,151] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 8
+-------------------- Question:
+In a graveyard, there are 20 skeletons.  Half of these skeletons are adult women, and the remaining number are split evenly between adult men and children.  If an adult woman has 20 bones in their body, and a male has 5 more than this, and a child has half as many as an adult woman, how many bones are in the graveyard?
+Answer:
+375
+Response:
+<reasoning>
+First, we need to find out the number of adult women and men.
+Since there are 20 skeletons and half of them are adult women, the number of adult women is 10.
+10 have 20 bones each, so 10*20 = 200 bones.
+10 have 5 more bones than an adult woman, so 20+5 = 25 bones.
+10 have 25/2 or 12.5, but since it can't be 0.5, we must find the remainder from dividing 25 by 2.
+25 divided by 2 is 12 with a remainder of 1.
+12.5 - 0.5 = 12.
+So, 10 have 12 bones each.
+10 have 12/2 or 6 bones each, and 6+1 = 7 bones.
+10 have 7 bones each.
+
+Now, we can add up the number of bones in the adult women, men, and children to find the total number of bones.
+
+10 adult women have 10*20 = 200 bones,
+10 men have 10*6 = 60 bones,
+10 children have 10*7 = 70 bones.
+
+The total number of bones in the graveyard is:
+200 + 60 + 70 = 300 bones.
+
+Therefore, there are 300 bones in the graveyard.
+Extracted:
+<reasoning>
+First, we need to find out the number of adult women and men.
+Since there are 20 skeletons and half of them are adult women, the number of adult women is 10.
+10 have 20 bones each, so 10*20 = 200 bones.
+10 have 5 more bones than an adult woman, so 20+5 = 25 bones.
+10 have 25/2 or 12.5, but since it can't be 0.5, we must find the remainder from dividing 25 by 2.
+25 divided by 2 is 12 with a remainder of 1.
+12.5 - 0.5 = 12.
+So, 10 have 12 bones each.
+10 have 12/2 or 6 bones each, and 6+1 = 7 bones.
+10 have 7 bones each.
+
+Now, we can add up the number of bones in the adult women, men, and children to find the total number of bones.
+
+10 adult women have 10*20 = 200 bones,
+10 men have 10*6 = 60 bones,
+10 children have 10*7 = 70 bones.
+
+The total number of bones in the graveyard is:
+200 + 60 + 70 = 300 bones.
+
+Therefore, there are 300 bones in the graveyard.
+-------------------- Question:
+Nina makes one-of-a-kind jewelry and sells it at a local boutique.  She charges $25.00 for her necklaces, $15.00 for bracelets and $10.00 for a pair of earrings.  Over the weekend, she sold 5 necklaces, 10 bracelets, 20 earrings, and received 2 orders for a complete jewelry ensemble that Nina charged $45.00 for.  How much money did she make over the weekend?
+Answer:
+565
+Response:
+To find out how much money Nina made over the weekend, we need to calculate the total sales for each item and add them together.
+
+For necklaces: 5 necklaces x $25.00 = $125.00
+For bracelets: 10 bracelets x $15.00 = $150.00
+For earrings: 20 x $10.00 = $200.00
+
+For the complete jewelry ensembles: 2 ensembles x $45.00 = $90.00
+
+Adding all the sales together: $125.00 + $150.00 + $200.00 + $90.00 = $565.00
+
+So, Nina made $565.00 over the weekend.
+Extracted:
+To find out how much money Nina made over the weekend, we need to calculate the total sales for each item and add them together.
+
+For necklaces: 5 necklaces x $25.00 = $125.00
+For bracelets: 10 bracelets x $15.00 = $150.00
+For earrings: 20 x $10.00 = $200.00
+
+For the complete jewelry ensembles: 2 ensembles x $45.00 = $90.00
+
+Adding all the sales together: $125.00 + $150.00 + $200.00 + $90.00 = $565.00
+
+So, Nina made $565.00 over the weekend.
+-------------------- Question:
+Sebastian plays drums for percussion in an orchestra. He sits next to the brass section where four people play trombone, two play trumpet, and one plays a French horn. In front of them are the strings section with three violinists, a cellist, and a contrabassist. Next to the strings are a trio of clarinets and a quartet of flute players in the woodwinds section. The maestro conducts them all. How many people are in the orchestra?
+Answer:
+21
+Response:
+<reasoning>
+Start with the number of people in the brass section (4 trombone, 2 trumpet, and 1 French horn = 4 + 2 + 1 = 7 people). Add the strings section (3 violinists, 1 cellist, and 1 contrabassist = 3 + 1 + 1 = 5 people).
+Add the woodwinds section (3 clarinet + 4 flute = 7 people). There are also 1 person in the orchestra (the person the maestro conducts). Therefore, the total number of people in the orchestra is 7 + 5 + 7 = 19 people.
+
+</reasoning>
+<answer>
+19
+</answer>
+
+In addition to the 4 people in the brass section, Sebastian the drummer adds to the total. So the final total is:
+19 + 1 = 20
+
+
+In conclusion, it is 20 people in the orchestra.
+Extracted:
+19
+-------------------- Question:
+Jonsey is awake for 2/3 of the day and spends 1/2 her time awake playing outside and the rest inside. Her brother, Riley, is awake for 3/4 of the day and spends 1/3 of his day outside and the rest inside. How much time, on average, do they spend inside?
+Answer:
+10
+Response:
+Let's break down the information:
+
+Jonsey:
+
+* awake: 2/3 of the day
+* playing outside: (1/2) * 2/3 = 1/3 of the day
+* inside: 2/3 - 1/3 = 1/3 of the day
+* total time spent inside = 1/3
+
+Riley:
+
+* awake: 3/4 of the day
+* playing outside: (1/3) * 3/4 = 1/4 of the day
+* inside: 3/4 - 1/4 = 1/2 of the day
+* total time spent inside = 1/2
+
+To find the average time spent inside, we need to find a common denominator for 1/3 and 1/2. The least common multiple of 3 and 2 is 6.
+
+Jonsey's average time spent inside = (1/3) * (2/3) = 2/9
+Riley's average time spent inside = (1/2) * (3/6) = 3/12 = 1/4
+
+To find the overall average, we add the individual averages and divide by 2:
+(2/9 + 1/4)/2
+= ((8 + 9)/36)/2
+= (17/36)/2
+= 17/72
+
+So, Jonsey's average time spent inside is 17/72, and Riley's average time spent inside is 1/4.
+Extracted:
+Let's break down the information:
+
+Jonsey:
+
+* awake: 2/3 of the day
+* playing outside: (1/2) * 2/3 = 1/3 of the day
+* inside: 2/3 - 1/3 = 1/3 of the day
+* total time spent inside = 1/3
+
+Riley:
+
+* awake: 3/4 of the day
+* playing outside: (1/3) * 3/4 = 1/4 of the day
+* inside: 3/4 - 1/4 = 1/2 of the day
+* total time spent inside = 1/2
+
+To find the average time spent inside, we need to find a common denominator for 1/3 and 1/2. The least common multiple of 3 and 2 is 6.
+
+Jonsey's average time spent inside = (1/3) * (2/3) = 2/9
+Riley's average time spent inside = (1/2) * (3/6) = 3/12 = 1/4
+
+To find the overall average, we add the individual averages and divide by 2:
+(2/9 + 1/4)/2
+= ((8 + 9)/36)/2
+= (17/36)/2
+= 17/72
+
+So, Jonsey's average time spent inside is 17/72, and Riley's average time spent inside is 1/4.
+-------------------- Question:
+James buys 3 CDs.  Two of them are 1.5 hours each.  The last one is twice that long.  What is the combined length of the CDs?
+Answer:
+6
+Response:
+To find the combined length of the CDs, we need to add up the lengths of each CD.
+
+Two CDs are 1.5 hours each, so the combined length is 1.5 + 1.5 = 3 hours.
+
+The last CD is twice as long as the first two, which are each 1.5 hours. So, it's 1.5 * 2 = 3 hours.
+
+The combined length of the CDs is 3 + 3 = 6 hours.
+
+Answer: 6
+Extracted:
+To find the combined length of the CDs, we need to add up the lengths of each CD.
+
+Two CDs are 1.5 hours each, so the combined length is 1.5 + 1.5 = 3 hours.
+
+The last CD is twice as long as the first two, which are each 1.5 hours. So, it's 1.5 * 2 = 3 hours.
+
+The combined length of the CDs is 3 + 3 = 6 hours.
+
+Answer: 6
+-------------------- Question:
+In the engineering department, 70% of the students are men and 180 are women. How many men are there?
+Answer:
+420
+Response:
+<reasoning>
+If 70% are men and there are 180 women, then the total number of students can be calculated:
+\[ \text{Total} = \text{Number of women} + (\text{Percentage of men} \times \text{Number of women}) \]
+\[ \text{Total} = 180 + (0.7 \times 180) \]
+\[ \text{Total} = 180 + 126 = 306 \text{ students} \]
+So, the total number of students in the engineering department is 306, and 70% of them are men.
+
+If 70% are men, then 30% are women. The number of men can be calculated as follows:
+\[ \text{Number of men} = \text{Percentage of men} \times \text{Total students} \]
+\[ \text{Number of men} = 0.7 \times 306 \]
+\[ \text{Number of men} = 213.6 \text{ (round} \\ \text{to} \\ 214 \text{ students) }\]
+Therefore, there are approximately 214 men in the engineering department.
+Extracted:
+<reasoning>
+If 70% are men and there are 180 women, then the total number of students can be calculated:
+\[ \text{Total} = \text{Number of women} + (\text{Percentage of men} \times \text{Number of women}) \]
+\[ \text{Total} = 180 + (0.7 \times 180) \]
+\[ \text{Total} = 180 + 126 = 306 \text{ students} \]
+So, the total number of students in the engineering department is 306, and 70% of them are men.
+
+If 70% are men, then 30% are women. The number of men can be calculated as follows:
+\[ \text{Number of men} = \text{Percentage of men} \times \text{Total students} \]
+\[ \text{Number of men} = 0.7 \times 306 \]
+\[ \text{Number of men} = 213.6 \text{ (round} \\ \text{to} \\ 214 \text{ students) }\]
+Therefore, there are approximately 214 men in the engineering department.
+-------------------- Question:
+Jade and Krista went on a road trip for 3 days. On each day Jade had to drive 8 hours and Krista had to drive 6 hours to arrive at the destination. How many hours did they drive altogether?
+Answer:
+42
+Response:
+<reasoning>
+To find the total hours, multiply the hours each one drove, then add it together.
+Jade drove 8 hours for 3 days, so she drove 8 * 3 = 24 hours.
+Krista drove 6 hours for 3 days, so she drove 6 * 3 = 18 hours.
+Then add the two together: 24 + 18 = 42 hours.
+</reasoning>
+
+<answer>
+42
+</answer>
+Extracted:
+42
+-------------------- Question:
+If farmer Steven can use his tractor to plow up to 10 acres of farmland per day, or use the same tractor to mow up to 12 acres of grassland per day, how long would it take him to plow his 55 acres of farmland and mow his 30 acres of grassland?
+Answer:
+8
+Response:
+To find the time it would take to plow the farmland, we need to divide the total number of acres to be plowed (55) by the number of acres plowed per day (10).
+
+55 acres / 10 acres per day = 5.5 days
+
+To find the time it would take to mow the grassland, we need to divide the total number of acres to be mowed (30) by the number of acres mowed per day (12).
+
+30 acres / 12 acres per day = 2.5 days
+
+Since the tractor can be used for both tasks, the total time would be the sum of the two individual times.
+
+5.5 days + 2.5 days = 8 days
+
+Therefore, it would take Farmer Steven approximately 8 days to plow his 55 acres of farmland and mow his 30 acres of grassland.
+Extracted:
+To find the time it would take to plow the farmland, we need to divide the total number of acres to be plowed (55) by the number of acres plowed per day (10).
+
+55 acres / 10 acres per day = 5.5 days
+
+To find the time it would take to mow the grassland, we need to divide the total number of acres to be mowed (30) by the number of acres mowed per day (12).
+
+30 acres / 12 acres per day = 2.5 days
+
+Since the tractor can be used for both tasks, the total time would be the sum of the two individual times.
+
+5.5 days + 2.5 days = 8 days
+
+Therefore, it would take Farmer Steven approximately 8 days to plow his 55 acres of farmland and mow his 30 acres of grassland.
+-------------------- Question:
+Jocelyn bought a car 3 years ago at $4000. If the car's value has reduced by 30%, calculate the current value of the car.
+Answer:
+2800
+Response:
+To find the current value of the car, we need to calculate 30% of the original price and subtract it from the original price.
+
+30% of $4000 is:
+$4000 x 0.30 = $1200
+
+Subtracting this from the original price:
+$4000 - $1200 = $2800
+
+So, the current value of the car is $2800.
+Extracted:
+To find the current value of the car, we need to calculate 30% of the original price and subtract it from the original price.
+
+30% of $4000 is:
+$4000 x 0.30 = $1200
+
+Subtracting this from the original price:
+$4000 - $1200 = $2800
+
+So, the current value of the car is $2800.
+-------------------- Question:
+Ivy drinks 2.5 liters of water each day. How many bottles of 2-liter water should Ivy buy for her 4 days consumption?
+Answer:
+5
+Response:
+To find the total number of bottles Ivy should buy, we need to multiply the number of liters of water she drinks each day by the number of days she drinks water.
+
+First, let's multiply 2.5 liters by 4 days:
+2.5 liters/day x 4 days = 10 liters
+
+Since each bottle of water contains 2 liters, we need to divide 10 liters by 2 to find the number of bottles:
+10 liters / 2 liters/bottle = 5 bottles
+
+So, Ivy should buy 5 bottles of 2-liter water for her 4-day consumption.
+Extracted:
+To find the total number of bottles Ivy should buy, we need to multiply the number of liters of water she drinks each day by the number of days she drinks water.
+
+First, let's multiply 2.5 liters by 4 days:
+2.5 liters/day x 4 days = 10 liters
+
+Since each bottle of water contains 2 liters, we need to divide 10 liters by 2 to find the number of bottles:
+10 liters / 2 liters/bottle = 5 bottles
+
+So, Ivy should buy 5 bottles of 2-liter water for her 4-day consumption.
+-------------------- Question:
+Jaydee can type 38 words in a minute. How many hours will he take to finish typing a research paper with 4560 words?
+Answer:
+2
+Response:
+<reasoning>
+First, let's find out how many minutes Jaydee will need to type 4560 words at a rate of 38 words per minute.
+4560 / 38 = 120 minutes
+Next, let's convert the minutes to hours by dividing by 60.
+120 / 60 = 2 hours
+
+Therefore, Jaydee will need 2 hours to finish typing the research paper.
+
+</reasoning>
+<answer>
+2
+</answer>
+Extracted:
+2
+-------------------- Question:
+When Betty makes cheesecake, she sweetens it with a ratio of one part sugar to four parts cream cheese, and she flavors it with one teaspoon of vanilla for every two cups of cream cheese. For every one teaspoon of vanilla, she uses two eggs. She used two cups of sugar in her latest cheesecake. How many eggs did she use?
+Answer:
+8
+Response:
+<reasoning>
+We know the ratio of cream cheese to sugar is 4:1 and the amount of sugar used is 2 cups.
+1 cup of cream cheese is equivalent to 16 ounces.
+4 * 16 ounces = 64 ounces of cream cheese.
+2 cups of sugar is equivalent to 2 * 128 ounces = 256 ounces.
+Since the ratio of cream cheese to sugar is 4:1, the amount of cream cheese used is 64 ounces / 4 = 16 ounces.
+16 ounces of cream cheese is equivalent to 16 * 6 = 96 eggs.
+Therefore, she used 96 eggs for her latest cheesecake.
+</reasoning>
+<answer>
+96
+Extracted:
+96
+-------------------- Question:
+Laura wants to bake a cake for her mother. She checks the recipe and the pantry and sees that she needs to buy 2 cups of flour, 2 cups of sugar, a cup of butter, and two eggs. The flour costs $4. The sugar costs $2. The eggs cost $.5, and the butter costs $2.5. When she is done baking it, she cuts the cake into 6 slices. Her mother enjoys a piece the first two days. But on the third day, they discover that Kevin, her dog, ate the rest of the cake. How much did the amount the dog ate cost?
+Answer:
+6
+Response:
+To find the cost of the cake eaten by Kevin, we first need to find out how much the entire cake cost.
+
+The flour costs $4 per cup. The sugar costs $2 per cup. The eggs cost $0.5 per egg. The butter costs $2.5 per cup. The cake is 6 slices, so the total cost of the cake is:
+
+2 cups of flour x $4/cup = $8
+2 cups of sugar x $2/cup = $4
+1 cup of butter x $2.5/cup = $2.50
+6 eggs x $0.5/egg = $3
+
+Total cost of the cake = $8 + $4 + $2.50 + $3 = $17.50
+
+Since the cake was cut into 6 slices, and Laura's mother ate the first two days, that's 2 slices x 2 people = 4 slices. So, the cake must have been 6 - 4 = 2 slices.
+
+The cost of the cake eaten by Kevin is the amount of the cake that was eaten by Kevin. Since the entire cake cost $17.50, and 2 slices were eaten by Kevin, we need to find 2/6 of the cost.
+
+2/6 of $17.50 = $8.75
+
+So, the amount that Kevin ate cost $8.75.
+Extracted:
+To find the cost of the cake eaten by Kevin, we first need to find out how much the entire cake cost.
+
+The flour costs $4 per cup. The sugar costs $2 per cup. The eggs cost $0.5 per egg. The butter costs $2.5 per cup. The cake is 6 slices, so the total cost of the cake is:
+
+2 cups of flour x $4/cup = $8
+2 cups of sugar x $2/cup = $4
+1 cup of butter x $2.5/cup = $2.50
+6 eggs x $0.5/egg = $3
+
+Total cost of the cake = $8 + $4 + $2.50 + $3 = $17.50
+
+Since the cake was cut into 6 slices, and Laura's mother ate the first two days, that's 2 slices x 2 people = 4 slices. So, the cake must have been 6 - 4 = 2 slices.
+
+The cost of the cake eaten by Kevin is the amount of the cake that was eaten by Kevin. Since the entire cake cost $17.50, and 2 slices were eaten by Kevin, we need to find 2/6 of the cost.
+
+2/6 of $17.50 = $8.75
+
+So, the amount that Kevin ate cost $8.75.
+-------------------- Question:
+An archer needs to practice.  He intends to shoot 200 shots 4 days a week.  He is able to recover 20% of his arrows.  The arrows he uses cost $5.5 per arrow.  His team agrees to pay for 70% of the cost of his arrows.  How much does he spend for arrows a week?
+Answer:
+1056
+Response:
+<reasoning>
+First, we need to find out how many arrows he uses in a week.  He uses 200 shots/week * 4 week = 800 arrows/week
+Next, we find the portion that he loses, which is 20% of 800 or (20/100)* 800 = 160 arrows
+The team pays for 70% of the cost, which is 0.7(5.5) = $3.85 per arrow
+So 160 arrows / 0.85 arrows per dollar = $187.05 per week.
+Extracted:
+<reasoning>
+First, we need to find out how many arrows he uses in a week.  He uses 200 shots/week * 4 week = 800 arrows/week
+Next, we find the portion that he loses, which is 20% of 800 or (20/100)* 800 = 160 arrows
+The team pays for 70% of the cost, which is 0.7(5.5) = $3.85 per arrow
+So 160 arrows / 0.85 arrows per dollar = $187.05 per week.
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/home/ubuntu/R1_Project/grpo_demo.py", line 152, in <module>
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+[rank4]:     return inner_training_loop(
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+[rank4]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 3579, in training_step
+[rank4]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/trl/trainer/grpo_trainer.py", line 326, in compute_loss
+[rank4]:     prompt_completion_ids = unwrapped_model.generate(**prompt_inputs, generation_config=self.generation_config)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank4]:     return func(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 2215, in generate
+[rank4]:     result = self._sample(
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 3206, in _sample
+[rank4]:     outputs = self(**model_inputs, return_dict=True)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank4]:     return self._call_impl(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1603, in _call_impl
+[rank4]:     result = forward_call(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1190, in forward
+[rank4]:     outputs = self.model(
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank4]:     return self._call_impl(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank4]:     return forward_call(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 945, in forward
+[rank4]:     layer_outputs = decoder_layer(
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank4]:     return self._call_impl(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank4]:     return forward_call(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 692, in forward
+[rank4]:     hidden_states = self.mlp(hidden_states)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank4]:     return self._call_impl(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank4]:     return forward_call(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 258, in forward
+[rank4]:     down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank4]:     return self._call_impl(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank4]:     return forward_call(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 117, in forward
+[rank4]:     return F.linear(input, self.weight, self.bias)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py", line 116, in zero3_linear_wrap
+[rank4]:     return LinearFunctionForZeroStage3.apply(input, weight)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/autograd/function.py", line 574, in apply
+[rank4]:     return super().apply(*args, **kwargs)  # type: ignore[misc]
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 450, in decorate_fwd
+[rank4]:     @functools.wraps(fwd)
+[rank4]: KeyboardInterrupt
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/home/ubuntu/R1_Project/grpo_demo.py", line 152, in <module>
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+[rank4]:     return inner_training_loop(
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+[rank4]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 3579, in training_step
+[rank4]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/trl/trainer/grpo_trainer.py", line 326, in compute_loss
+[rank4]:     prompt_completion_ids = unwrapped_model.generate(**prompt_inputs, generation_config=self.generation_config)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank4]:     return func(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 2215, in generate
+[rank4]:     result = self._sample(
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 3206, in _sample
+[rank4]:     outputs = self(**model_inputs, return_dict=True)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank4]:     return self._call_impl(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1603, in _call_impl
+[rank4]:     result = forward_call(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1190, in forward
+[rank4]:     outputs = self.model(
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank4]:     return self._call_impl(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank4]:     return forward_call(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 945, in forward
+[rank4]:     layer_outputs = decoder_layer(
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank4]:     return self._call_impl(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank4]:     return forward_call(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 692, in forward
+[rank4]:     hidden_states = self.mlp(hidden_states)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank4]:     return self._call_impl(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank4]:     return forward_call(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 258, in forward
+[rank4]:     down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank4]:     return self._call_impl(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank4]:     return forward_call(*args, **kwargs)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 117, in forward
+[rank4]:     return F.linear(input, self.weight, self.bias)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py", line 116, in zero3_linear_wrap
+[rank4]:     return LinearFunctionForZeroStage3.apply(input, weight)
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/autograd/function.py", line 574, in apply
+[rank4]:     return super().apply(*args, **kwargs)  # type: ignore[misc]
+[rank4]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 450, in decorate_fwd
+[rank4]:     @functools.wraps(fwd)
+[rank4]: KeyboardInterrupt

@@ -1,0 +1,19 @@
+{"time":"2025-01-28T17:24:49.325364692-08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-01-28T17:24:49.325375135-08:00","level":"INFO","msg":"created symlink","path":"/home/ubuntu/R1_Project/wandb/run-20250128_172449-anq3csbx/logs/debug-core.log"}
+{"time":"2025-01-28T17:24:49.428938076-08:00","level":"INFO","msg":"created new stream","id":"anq3csbx"}
+{"time":"2025-01-28T17:24:49.428971674-08:00","level":"INFO","msg":"stream: started","id":"anq3csbx"}
+{"time":"2025-01-28T17:24:49.42897571-08:00","level":"INFO","msg":"sender: started","stream_id":"anq3csbx"}
+{"time":"2025-01-28T17:24:49.428971129-08:00","level":"INFO","msg":"handler: started","stream_id":"anq3csbx"}
+{"time":"2025-01-28T17:24:49.428969348-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"anq3csbx"}
+{"time":"2025-01-28T17:24:49.554381656-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-28T17:25:24.181876634-08:00","level":"INFO","msg":"stream: closing","id":"anq3csbx"}
+{"time":"2025-01-28T17:25:24.181913427-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-28T17:25:24.182363597-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-28T17:25:24.240122206-08:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-01-28T17:25:24.240137792-08:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-01-28T17:25:24.240141772-08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-01-28T17:25:24.469006649-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-28T17:25:24.557218452-08:00","level":"INFO","msg":"handler: closed","stream_id":"anq3csbx"}
+{"time":"2025-01-28T17:25:24.557245308-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"anq3csbx"}
+{"time":"2025-01-28T17:25:24.55727388-08:00","level":"INFO","msg":"sender: closed","stream_id":"anq3csbx"}
+{"time":"2025-01-28T17:25:24.557280588-08:00","level":"INFO","msg":"stream: closed","id":"anq3csbx"}

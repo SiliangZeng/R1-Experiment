@@ -1,0 +1,471 @@
+[2025-01-28 17:18:11,711] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-01-28 17:18:12,800] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 8
+[2025-01-28 17:18:17,861] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 8
+[2025-01-28 17:18:19,145] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 8
+-------------------- Question:
+Sam, Sid, and Steve brought popsicle sticks for their group activity in their Art class. Sam has thrice as many as Sid, and Sid has twice as many as Steve. If Steve has 12 popsicle sticks, how many popsicle sticks can they use for their Art class activity?
+Answer:
+108
+Response:
+<reasoning>
+Let's denote the number of sticks Steve has as S.
+Sid has 2S sticks.
+Sam has 3S sticks.
+Since Sid has twice as many sticks as Steve,
+2S = 2 * S
+S stands for side, that is equal to 12.
+Steve has 12 sticks.
+So Sid has 24 sticks.
+Sam has 3 times the number of sticks that Sid has, and that is 3 * 24 = 72.
+So in total, they have 12 + 24 + 72 = 108.
+</reasoning>
+<answer>
+108
+</answer>
+Extracted:
+108
+-------------------- Question:
+At Hank’s cafe, he sells big stack pancakes which have 5 pancakes and short stack pancakes which have 3 pancakes.  If 9 customers order the short stack and 6 customers order the big stack, how many pancakes does Hank need to make?
+Answer:
+57
+Response:
+<reasoning>
+9 customers ordered short stack, that's 9 * 3 = 27 pancakes
+6 customers ordered big stack, that's 6 * 5 = 30 pancakes
+27 + 30 = 57 pancakes
+</reasoning>
+<answer>
+57
+Extracted:
+57
+-------------------- Question:
+Mary only has 8 screws on hand and needs to buy 2 times more to fix her sink. When she is beginning repairs, she has to split the screws into four sections. How many are in each pile?
+Answer:
+6
+Response:
+To find the total number of screws Mary needs to buy, we first calculate 2 times the number she currently has:
+
+2 * 8 = 16
+
+Since she has to split the screws into four sections, we divide the total number of screws by 4:
+
+16 / 4 = 4
+
+So, Mary will need to buy 16 screws and will have 4 screws left over.
+Extracted:
+To find the total number of screws Mary needs to buy, we first calculate 2 times the number she currently has:
+
+2 * 8 = 16
+
+Since she has to split the screws into four sections, we divide the total number of screws by 4:
+
+16 / 4 = 4
+
+So, Mary will need to buy 16 screws and will have 4 screws left over.
+-------------------- Question:
+If Beth is 18 years old and her little sister is 5, in how many years would she be twice her sister's age?
+Answer:
+8
+Response:
+Let's denote the number of years it would take for Beth to be twice her sister's age as x.
+
+Initially, Beth's age: 18
+Sister's age: 5
+
+In x years, Beth's age will be: 18 + x
+Sister's age will be: 5 + x
+
+According to the problem, in x years, Beth will be twice her sister's age.
+
+So, we can write the equation:
+
+18 + x = 2(5 + x)
+
+Simplifying the equation,
+18 + x = 10 + 2x
+18 - 10 = 2x - x
+8 = x
+
+So, it would take Beth x = 8 years to be twice her sister's age.
+Extracted:
+Let's denote the number of years it would take for Beth to be twice her sister's age as x.
+
+Initially, Beth's age: 18
+Sister's age: 5
+
+In x years, Beth's age will be: 18 + x
+Sister's age will be: 5 + x
+
+According to the problem, in x years, Beth will be twice her sister's age.
+
+So, we can write the equation:
+
+18 + x = 2(5 + x)
+
+Simplifying the equation,
+18 + x = 10 + 2x
+18 - 10 = 2x - x
+8 = x
+
+So, it would take Beth x = 8 years to be twice her sister's age.
+-------------------- Question:
+After five years, Ron will be four times as old as Maurice. If Ron's age now is 43, how old is Maurice now?
+Answer:
+7
+Response:
+<reasoning>
+Let x be Maurice's age now. After 5 years, he will be (x+5). Ron's age now is 43 and in 5 years, he will be 43+5 = 48. According to the problem, in 5 years, Ron will be four times as old as Maurice. So, 4x = 48; x = 12.
+</reasoning>
+<answer>
+12
+</answer>
+Extracted:
+12
+-------------------- Question:
+Uncle Lou was given four bags of peanuts to eat on his 2-hour plane flight.  Each bag contains 30 peanuts.  If he eats all of the peanuts during the flight, one at a time, consumed at equally spaced intervals, what is the length of time, in minutes, between eating each peanut?
+Answer:
+1
+Response:
+To find the length of time between eating each peanut, we need to first find the total number of peanuts Uncle Lou has.
+
+4 bags of peanuts * 30 peanuts per bag = 120 peanuts
+
+Since Uncle Lou eats all the peanuts during a 2-hour flight, we need to find out how many minutes are in 2 hours.
+
+2 hours = 120 minutes
+
+Now, we need to find the number of intervals, which is the total number of peanuts divided by the number of peanuts eaten per interval. This is 120 peanuts / 30 peanuts per interval = 4 intervals.
+
+Since the peanuts are eaten at equally spaced intervals, we need to divide the total number of minutes by the number of intervals to find the length of time between eating each peanut. This is 120 minutes / 4 intervals = 30 minutes.
+
+Therefore, the length of time between eating each peanut is 30 minutes.
+Extracted:
+To find the length of time between eating each peanut, we need to first find the total number of peanuts Uncle Lou has.
+
+4 bags of peanuts * 30 peanuts per bag = 120 peanuts
+
+Since Uncle Lou eats all the peanuts during a 2-hour flight, we need to find out how many minutes are in 2 hours.
+
+2 hours = 120 minutes
+
+Now, we need to find the number of intervals, which is the total number of peanuts divided by the number of peanuts eaten per interval. This is 120 peanuts / 30 peanuts per interval = 4 intervals.
+
+Since the peanuts are eaten at equally spaced intervals, we need to divide the total number of minutes by the number of intervals to find the length of time between eating each peanut. This is 120 minutes / 4 intervals = 30 minutes.
+
+Therefore, the length of time between eating each peanut is 30 minutes.
+-------------------- Question:
+Martha buys 1 latte for $4.00 every morning, 5 days a week.  3 days a week, she buys an iced coffee for $2.00.  Her goal for the entire year is to cut her coffee spending by 25%.  How much will she save?
+Answer:
+338
+Response:
+To find the weekly cost of coffee, first find the monthly and yearly costs.
+
+Martha buys 1 latte for $4.00 and 5 iced coffees for $10.00, for a total of $14.00 per week.
+Her monthly cost is 14.00 * 4 = 56.00.
+Her yearly cost is 56.00 * 52 = 2912.00.
+Now calculate 25% of her yearly cost:
+25/100 * 2912 = 729.
+Martha will save 729.00.
+Extracted:
+To find the weekly cost of coffee, first find the monthly and yearly costs.
+
+Martha buys 1 latte for $4.00 and 5 iced coffees for $10.00, for a total of $14.00 per week.
+Her monthly cost is 14.00 * 4 = 56.00.
+Her yearly cost is 56.00 * 52 = 2912.00.
+Now calculate 25% of her yearly cost:
+25/100 * 2912 = 729.
+Martha will save 729.00.
+-------------------- Question:
+Mary and her two friends agreed to evenly pay for the cost of 2 pounds of chicken. Mary's mother went to the grocery and bought the 2-pound chicken, 3 pounds of beef that cost $4 per pound, and a liter of oil that costs $1. If Mary's mother paid a total of $16 for the grocery, how much should Mary and her two friends pay each for the chicken?
+Answer:
+1
+Response:
+<reasoning>
+She bought 2 pounds of chicken. There are 14 pounds in a pound.  14 * 2 = 28 pounds
+3 * 4 = 12 pounds of beef
+1 * 1 = 1 liter of oil
+Total pounds of food is 28 + 12 + 1 = 41 pounds
+To find out the cost of the chicken, 41 divided by 2 is 20.5.
+The cost of the chicken should be divided by 3 since the total is to be shared three ways
+Mary and her two friends should each pay 20.5 / 3 = $6.75.
+</reasoning>
+<answer>
+$6.75
+Extracted:
+$6.75
+-------------------- Question:
+Mark is running for an election and wins 70% of the votes in an area with 100,000 voters.  He got twice as many total votes in the remaining area.  How many votes did he get in total?
+Answer:
+210,000
+Response:
+Let's say Mark got x votes in the first area and 2x votes in the second area. We know that x + 2x = 100,000.
+
+Combine the x terms: 3x = 100,000
+
+Divide both sides by 3: x = 33,333.33
+
+So Mark got 33,333.33 votes in the first area and 2 * 33,333.33 = 67,666.67 votes in the second area.
+
+Total votes Mark got = x + 2x = 33,333.33 + 67,666.67 = 100,000
+Extracted:
+Let's say Mark got x votes in the first area and 2x votes in the second area. We know that x + 2x = 100,000.
+
+Combine the x terms: 3x = 100,000
+
+Divide both sides by 3: x = 33,333.33
+
+So Mark got 33,333.33 votes in the first area and 2 * 33,333.33 = 67,666.67 votes in the second area.
+
+Total votes Mark got = x + 2x = 33,333.33 + 67,666.67 = 100,000
+-------------------- Question:
+Tara has been planning to buy a laptop which costs $1000. A computer shop accepts payment in installments of $65 per month provided that a 20% down payment is made. If Tara wants to pay an additional $20 for the down payment, how much will her balance be after paying for 4 months?
+Answer:
+520
+Response:
+To find the amount of the down payment, multiply the cost of the laptop by 20%.
+
+Down payment = $1000 * 20% = $1000 * 0.20 = $200.
+New down payment = $200 + $20 = $220.
+
+For 4 months, multiply the monthly installment by the number of months.
+Total installment = $65 * 4 = $260.
+
+The balance after 4 months will be the difference between the cost of the laptop and the total installment.
+Balance = Cost of laptop - Total installment
+Balance = $1000 - $260
+Balance = $740.
+
+Therefore, Tara's balance after paying for 4 months will be $740.
+Extracted:
+To find the amount of the down payment, multiply the cost of the laptop by 20%.
+
+Down payment = $1000 * 20% = $1000 * 0.20 = $200.
+New down payment = $200 + $20 = $220.
+
+For 4 months, multiply the monthly installment by the number of months.
+Total installment = $65 * 4 = $260.
+
+The balance after 4 months will be the difference between the cost of the laptop and the total installment.
+Balance = Cost of laptop - Total installment
+Balance = $1000 - $260
+Balance = $740.
+
+Therefore, Tara's balance after paying for 4 months will be $740.
+-------------------- Question:
+Todd bought a pair of jeans that cost $125 at full price. The jeans were on sale for 20% off. He then applied a coupon that took off $10. He paid with a store credit card that gave him another 10% off the remaining amount. How many dollars did he save on the original price of the jeans?
+Answer:
+44
+Response:
+To find the amount Todd saved, we need to calculate the cost after each discount.
+
+Original price = $125
+Sales discount = 20% of $125 = 0.20 * $125 = $25
+Cost after sales discount = $125 - $25 = $100
+
+Todd then applied the $10 coupon:
+New cost = $100 - $10 = $90
+
+Finally, the store credit card gave another 10% off:
+Discount = 0.10 * $90 = $9
+New final cost = $90 - $9 = $81
+
+So, Todd saved $25 (after sales discount) + $10 (coupon) + $9 (store credit card) = $44.
+
+Todd saved $44 on the original price of the jeans.
+Extracted:
+To find the amount Todd saved, we need to calculate the cost after each discount.
+
+Original price = $125
+Sales discount = 20% of $125 = 0.20 * $125 = $25
+Cost after sales discount = $125 - $25 = $100
+
+Todd then applied the $10 coupon:
+New cost = $100 - $10 = $90
+
+Finally, the store credit card gave another 10% off:
+Discount = 0.10 * $90 = $9
+New final cost = $90 - $9 = $81
+
+So, Todd saved $25 (after sales discount) + $10 (coupon) + $9 (store credit card) = $44.
+
+Todd saved $44 on the original price of the jeans.
+-------------------- Question:
+Ken, Dave, and Jerry played shuffleboard against one another while together vacationing in Florida.  Ken won 5 more games than Dave, and Dave won 3 more games than Jerry.  If Jerry won 7 games, what was the total number of games they played?
+Answer:
+32
+Response:
+<reasoning>
+J = Jerry
+D = Dave
+K = Ken
+
+D + K = 7 (Jerry won 7 games)
+K = D + 5
+D + (D + 5) = 7
+2D + 5 = 7
+2D = 2
+D = 1
+K = 6
+</reasoning>
+J + K + D = J + 6 + 1 = 7 + 6 = 13
+Extracted:
+<reasoning>
+J = Jerry
+D = Dave
+K = Ken
+
+D + K = 7 (Jerry won 7 games)
+K = D + 5
+D + (D + 5) = 7
+2D + 5 = 7
+2D = 2
+D = 1
+K = 6
+</reasoning>
+J + K + D = J + 6 + 1 = 7 + 6 = 13
+-------------------- Question:
+Last week, Tony went to a toy store and bought $250 a set of Lego blocks, a $120 worth toy sword, and a $35 play dough. He bought 3 sets of lego, 7 toy swords, and 10 play doughs. How much did Tony pay in total?
+Answer:
+1940
+Response:
+To find the total amount Tony paid, we need to calculate the cost of each item and then add them together.
+
+Cost of 3 sets of Lego: 3 x $250 = $750
+Cost of 7 toy swords: 7 x $120 = $840
+Cost of 10 play doughs: 10 x $35 = $350
+
+Adding these costs together, we get $750 + $840 + $350 = $1940
+
+Tony paid $1940 in total for the items.
+Extracted:
+To find the total amount Tony paid, we need to calculate the cost of each item and then add them together.
+
+Cost of 3 sets of Lego: 3 x $250 = $750
+Cost of 7 toy swords: 7 x $120 = $840
+Cost of 10 play doughs: 10 x $35 = $350
+
+Adding these costs together, we get $750 + $840 + $350 = $1940
+
+Tony paid $1940 in total for the items.
+-------------------- Question:
+Laura loves to cook. One day she decided to make dinner for her family. She bought the necessary ingredients for this occasion: two salads, 2 kilograms of beef, 1 kilogram of potatoes, and two liters of juice. One salad costs $3, and one kilogram of beef is two times more expensive. One kilogram of potatoes costs one-third of the price of one salad, and one liter of juice is $1.5. How much did Laura need to pay for all the products she bought?
+Answer:
+22
+Response:
+To find the total cost of the products Laura bought, we need to calculate the cost of each item and then add them up.
+
+1. Salads: Laura bought 2 salads. Each salad costs $3, so the total cost for salads is 2 x $3 = $6.
+
+2. Beef: One kilogram of beef is two times more expensive than one salad, which means one kilogram of beef costs $3 x 2 = $6.
+
+3. Potatoes: One kilogram of potatoes costs one-third of the price of one salad, so one kilogram of potatoes costs $3 / 3 = $1.
+
+4. Juice: Laura bought two liters of juice for $1.5 per liter, so the total cost for juice is 2 x $1.5 = $3.
+
+Now, let's add up the costs of all the products:
+
+$6 (salads) + $6 (beef) + $1 (potatoes) + $3 (juice) = $18
+
+So, Laura needed to pay $18 for all the products she bought.
+Extracted:
+To find the total cost of the products Laura bought, we need to calculate the cost of each item and then add them up.
+
+1. Salads: Laura bought 2 salads. Each salad costs $3, so the total cost for salads is 2 x $3 = $6.
+
+2. Beef: One kilogram of beef is two times more expensive than one salad, which means one kilogram of beef costs $3 x 2 = $6.
+
+3. Potatoes: One kilogram of potatoes costs one-third of the price of one salad, so one kilogram of potatoes costs $3 / 3 = $1.
+
+4. Juice: Laura bought two liters of juice for $1.5 per liter, so the total cost for juice is 2 x $1.5 = $3.
+
+Now, let's add up the costs of all the products:
+
+$6 (salads) + $6 (beef) + $1 (potatoes) + $3 (juice) = $18
+
+So, Laura needed to pay $18 for all the products she bought.
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/home/ubuntu/R1_Project/grpo_demo.py", line 152, in <module>
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+[rank7]:     return inner_training_loop(
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+[rank7]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 3579, in training_step
+[rank7]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/trl/trainer/grpo_trainer.py", line 326, in compute_loss
+[rank7]:     prompt_completion_ids = unwrapped_model.generate(**prompt_inputs, generation_config=self.generation_config)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank7]:     return func(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 2215, in generate
+[rank7]:     result = self._sample(
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 3206, in _sample
+[rank7]:     outputs = self(**model_inputs, return_dict=True)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank7]:     return self._call_impl(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1603, in _call_impl
+[rank7]:     result = forward_call(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1190, in forward
+[rank7]:     outputs = self.model(
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank7]:     return self._call_impl(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank7]:     return forward_call(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 945, in forward
+[rank7]:     layer_outputs = decoder_layer(
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank7]:     return self._call_impl(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank7]:     return forward_call(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 692, in forward
+[rank7]:     hidden_states = self.mlp(hidden_states)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank7]:     return self._call_impl(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank7]:     return forward_call(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 258, in forward
+[rank7]:     down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1549, in _wrapped_call_impl
+[rank7]:     def _wrapped_call_impl(self, *args, **kwargs):
+[rank7]: KeyboardInterrupt
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/home/ubuntu/R1_Project/grpo_demo.py", line 152, in <module>
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+[rank7]:     return inner_training_loop(
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+[rank7]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/trainer.py", line 3579, in training_step
+[rank7]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/trl/trainer/grpo_trainer.py", line 326, in compute_loss
+[rank7]:     prompt_completion_ids = unwrapped_model.generate(**prompt_inputs, generation_config=self.generation_config)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank7]:     return func(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 2215, in generate
+[rank7]:     result = self._sample(
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/generation/utils.py", line 3206, in _sample
+[rank7]:     outputs = self(**model_inputs, return_dict=True)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank7]:     return self._call_impl(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1603, in _call_impl
+[rank7]:     result = forward_call(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1190, in forward
+[rank7]:     outputs = self.model(
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank7]:     return self._call_impl(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank7]:     return forward_call(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 945, in forward
+[rank7]:     layer_outputs = decoder_layer(
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank7]:     return self._call_impl(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank7]:     return forward_call(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 692, in forward
+[rank7]:     hidden_states = self.mlp(hidden_states)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank7]:     return self._call_impl(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank7]:     return forward_call(*args, **kwargs)
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 258, in forward
+[rank7]:     down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+[rank7]:   File "/opt/conda/envs/handbook/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1549, in _wrapped_call_impl
+[rank7]:     def _wrapped_call_impl(self, *args, **kwargs):
+[rank7]: KeyboardInterrupt

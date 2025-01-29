@@ -1,0 +1,14 @@
+{"time":"2025-01-28T17:18:10.776709408-08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-01-28T17:18:10.776719228-08:00","level":"INFO","msg":"created symlink","path":"/home/ubuntu/R1_Project/wandb/run-20250128_171810-aaj84zfl/logs/debug-core.log"}
+{"time":"2025-01-28T17:18:11.080088868-08:00","level":"INFO","msg":"created new stream","id":"aaj84zfl"}
+{"time":"2025-01-28T17:18:11.080112613-08:00","level":"INFO","msg":"stream: started","id":"aaj84zfl"}
+{"time":"2025-01-28T17:18:11.080130247-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"aaj84zfl"}
+{"time":"2025-01-28T17:18:11.080135015-08:00","level":"INFO","msg":"sender: started","stream_id":"aaj84zfl"}
+{"time":"2025-01-28T17:18:11.080148602-08:00","level":"INFO","msg":"handler: started","stream_id":"aaj84zfl"}
+{"time":"2025-01-28T17:18:11.205707922-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-28T17:20:58.574374982-08:00","level":"INFO","msg":"stream: closing","id":"aaj84zfl"}
+{"time":"2025-01-28T17:20:58.574405298-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-28T17:20:58.574863825-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-28T17:20:58.628633619-08:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-01-28T17:20:58.628648546-08:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-01-28T17:20:58.628652035-08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}

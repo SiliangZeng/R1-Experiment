@@ -1,0 +1,19 @@
+{"time":"2025-01-28T17:18:10.77484365-08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-01-28T17:18:10.774853786-08:00","level":"INFO","msg":"created symlink","path":"/home/ubuntu/R1_Project/wandb/run-20250128_171810-6wzg1wu4/logs/debug-core.log"}
+{"time":"2025-01-28T17:18:11.078759107-08:00","level":"INFO","msg":"created new stream","id":"6wzg1wu4"}
+{"time":"2025-01-28T17:18:11.07879865-08:00","level":"INFO","msg":"stream: started","id":"6wzg1wu4"}
+{"time":"2025-01-28T17:18:11.078791524-08:00","level":"INFO","msg":"handler: started","stream_id":"6wzg1wu4"}
+{"time":"2025-01-28T17:18:11.078800239-08:00","level":"INFO","msg":"sender: started","stream_id":"6wzg1wu4"}
+{"time":"2025-01-28T17:18:11.078800704-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"6wzg1wu4"}
+{"time":"2025-01-28T17:18:11.209584211-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-28T17:20:58.574792843-08:00","level":"INFO","msg":"stream: closing","id":"6wzg1wu4"}
+{"time":"2025-01-28T17:20:58.574835355-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-28T17:20:58.575298513-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-28T17:20:58.627066455-08:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-01-28T17:20:58.62708523-08:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-01-28T17:20:58.627089166-08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-01-28T17:20:58.828111979-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-28T17:20:59.212774883-08:00","level":"INFO","msg":"handler: closed","stream_id":"6wzg1wu4"}
+{"time":"2025-01-28T17:20:59.212803513-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6wzg1wu4"}
+{"time":"2025-01-28T17:20:59.212851574-08:00","level":"INFO","msg":"sender: closed","stream_id":"6wzg1wu4"}
+{"time":"2025-01-28T17:20:59.212871773-08:00","level":"INFO","msg":"stream: closed","id":"6wzg1wu4"}

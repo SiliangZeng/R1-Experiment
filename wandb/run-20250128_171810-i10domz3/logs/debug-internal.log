@@ -1,0 +1,19 @@
+{"time":"2025-01-28T17:18:10.495257944-08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-01-28T17:18:10.495268473-08:00","level":"INFO","msg":"created symlink","path":"/home/ubuntu/R1_Project/wandb/run-20250128_171810-i10domz3/logs/debug-core.log"}
+{"time":"2025-01-28T17:18:10.699139939-08:00","level":"INFO","msg":"created new stream","id":"i10domz3"}
+{"time":"2025-01-28T17:18:10.699177014-08:00","level":"INFO","msg":"stream: started","id":"i10domz3"}
+{"time":"2025-01-28T17:18:10.699172677-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"i10domz3"}
+{"time":"2025-01-28T17:18:10.699172556-08:00","level":"INFO","msg":"handler: started","stream_id":"i10domz3"}
+{"time":"2025-01-28T17:18:10.69919965-08:00","level":"INFO","msg":"sender: started","stream_id":"i10domz3"}
+{"time":"2025-01-28T17:18:10.841520758-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-28T17:20:58.576656099-08:00","level":"INFO","msg":"stream: closing","id":"i10domz3"}
+{"time":"2025-01-28T17:20:58.576687183-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-28T17:20:58.577244109-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-28T17:20:58.627067259-08:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-01-28T17:20:58.627085342-08:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-01-28T17:20:58.62708935-08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-01-28T17:20:58.819170243-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-28T17:20:59.212869762-08:00","level":"INFO","msg":"handler: closed","stream_id":"i10domz3"}
+{"time":"2025-01-28T17:20:59.212894165-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"i10domz3"}
+{"time":"2025-01-28T17:20:59.212901153-08:00","level":"INFO","msg":"sender: closed","stream_id":"i10domz3"}
+{"time":"2025-01-28T17:20:59.212957842-08:00","level":"INFO","msg":"stream: closed","id":"i10domz3"}

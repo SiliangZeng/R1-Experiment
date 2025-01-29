@@ -1,0 +1,8 @@
+{"time":"2025-01-28T16:44:42.143056487-08:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-01-28T16:44:42.143067224-08:00","level":"INFO","msg":"created symlink","path":"/home/ubuntu/R1_Project/wandb/run-20250128_164442-f92dbikh/logs/debug-core.log"}
+{"time":"2025-01-28T16:44:42.246829411-08:00","level":"INFO","msg":"created new stream","id":"f92dbikh"}
+{"time":"2025-01-28T16:44:42.246850171-08:00","level":"INFO","msg":"stream: started","id":"f92dbikh"}
+{"time":"2025-01-28T16:44:42.24687024-08:00","level":"INFO","msg":"sender: started","stream_id":"f92dbikh"}
+{"time":"2025-01-28T16:44:42.246870272-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"f92dbikh"}
+{"time":"2025-01-28T16:44:42.246890229-08:00","level":"INFO","msg":"handler: started","stream_id":"f92dbikh"}
+{"time":"2025-01-28T16:44:42.392684857-08:00","level":"INFO","msg":"Starting system monitor"}
