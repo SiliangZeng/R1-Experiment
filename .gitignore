@@ -1,3 +1,7 @@
 wandb
 outputs
+.vscode
+__pycache__
+
+
 submit.sh

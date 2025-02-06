@@ -1,0 +1,27 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Physics of Language Models: Part 2.1, Grade-School Math
+  and the Hidden Reasoning Process
+message: >-
+  If you plan to include also our retry data or box-over-box
+  data, please also cite our Part 2.2.
+type: dataset
+authors:
+  - given-names: Tian
+    family-names: Ye
+  - given-names: Zicheng
+    family-names: Xu
+  - given-names: Yuanzhi
+    family-names: Li
+  - given-names: Zeyuan
+    family-names: Allen-Zhu
+identifiers:
+  - type: url
+    value: 'https://arxiv.org/abs/2407.20311'
+    description: Part 2.1 paper
+  - type: url
+    value: 'https://arxiv.org/abs/2408.16293'
+    description: Part 2.2 paper
