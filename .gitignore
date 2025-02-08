@@ -3,5 +3,6 @@ outputs
 .vscode
 __pycache__
 
-
+test_jl.ipynb
+test_jl.py
 submit.sh

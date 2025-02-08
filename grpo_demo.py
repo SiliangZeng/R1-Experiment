@@ -50,18 +50,20 @@ def extract_hash_answer(text: str) -> str | None:
 # uncomment middle messages for 1-shot prompting
 def get_gsm8k_questions(split = "train") -> Dataset:
     data = load_dataset('openai/gsm8k', 'main')[split] # type: ignore
-    data = data.map(lambda x: { # type: ignore
-        'prompt': [
-            {'role': 'system', 'content': SYSTEM_PROMPT},
-            #{'role': 'user', 'content': 'What is the largest single-digit prime number?'},
-            #{'role': 'assistant', 'content': XML_COT_FORMAT.format(
-            #    reasoning="9 is divisble by 3 and 8 is divisible by 2, but 7 is prime.",
-            #    answer="7"
-            #)},
-            {'role': 'user', 'content': x['question']}
-        ],
-        'answer': extract_hash_answer(x['answer'])
-    }) # type: ignore
+    if split == "train":
+        data = data.map(lambda x: { # type: ignore
+            'prompt': [
+                {'role': 'system', 'content': SYSTEM_PROMPT},
+                #{'role': 'user', 'content': 'What is the largest single-digit prime number?'},
+                #{'role': 'assistant', 'content': XML_COT_FORMAT.format(
+                #    reasoning="9 is divisble by 3 and 8 is divisible by 2, but 7 is prime.",
+                #    answer="7"
+                #)},
+                {'role': 'user', 'content': x['question']}
+            ],
+            'answer': extract_hash_answer(x['answer'])
+        }) # type: ignore
+    
     return data # type: ignore
 
 # Reward functions
@@ -132,6 +134,7 @@ def parse_args():
     parser.add_argument("--max_completion_length", type=int, default=786)
     parser.add_argument("--num_train_epochs", type=int, default=1)
     parser.add_argument("--save_steps", type=int, default=100)
+    # parser.add_argument("--eval_steps", type=int, default=10)
     parser.add_argument("--max_grad_norm", type=float, default=0.1)
     parser.add_argument("--report_to", type=str, default="wandb")
     
@@ -151,20 +154,16 @@ if __name__=="__main__":
     # model_name = "meta-llama/Llama-3.2-1B-Instruct"
     # model_name = "Qwen/Qwen2.5-1.5B-Instruct"
 
-    if "llama" in args.model_name.lower():
-        output_dir = "outputs/Llama-1B-GRPO"
-        run_name = "Llama-1B-GRPO-gsm8k-lr" + str(args.lr) + "-bs-" + str(args.per_device_train_batch_size)
-    elif "qwen" in args.model_name.lower():
-        output_dir="outputs/Qwen-1.5B-GRPO"
-        run_name="Qwen-1.5B-GRPO-gsm8k" + str(args.lr) + "-bs-" + str(args.per_device_train_batch_size)
+    run_name = args.output_dir.split("/")[-1] + str(args.lr) + "-bs-" + str(args.per_device_train_batch_size)
         
     if args.report_to == "wandb" and accelerator.is_main_process:
         wandb.init(project=args.wandb_project, entity=args.wandb_entity, name=run_name)
     
     dataset = get_gsm8k_questions()
+    # test_dataset = get_gsm8k_questions(split="test")
     
     training_args = GRPOConfig(
-        output_dir=output_dir,
+        output_dir=args.output_dir,
         run_name=run_name,
         learning_rate=args.lr,
         adam_beta1=args.adam_beta1,
@@ -173,8 +172,11 @@ if __name__=="__main__":
         warmup_ratio=args.warmup_ratio,
         lr_scheduler_type=args.lr_scheduler_type,
         logging_steps=1,
+        eval_strategy="no",
+        # eval_steps=args.eval_steps,
         bf16=True,
         per_device_train_batch_size=args.per_device_train_batch_size,
+        # per_device_eval_batch_size=1,
         gradient_accumulation_steps=args.gradient_accumulation_steps,
         num_generations=args.num_generations,
         max_prompt_length=args.max_prompt_length,
@@ -218,21 +220,26 @@ if __name__=="__main__":
                 correctness_reward_func],
             args=training_args,
             train_dataset=dataset,
-            #peft_config=peft_config
+            # eval_dataset=test_dataset,
+            # peft_config=peft_config
         )
     elif args.trainer.lower() == "grpo_new":
+        # for the new trainer, always keep the correctness reward the first
         trainer = GRPOTrainer_new(
             model=model,
             processing_class=tokenizer,
             reward_funcs=[
+                correctness_reward_func,
                 xmlcount_reward_func,
                 soft_format_reward_func,
                 strict_format_reward_func,
-                int_reward_func,
-                correctness_reward_func],
+                int_reward_func],
             args=training_args,
             train_dataset=dataset,
-            #peft_config=peft_config
+            # eval_dataset=test_dataset,
+            # peft_config=peft_config
         )
     
     trainer.train()
+    
+    # TODO: add a evaluation 
